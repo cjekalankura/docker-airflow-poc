@@ -1,0 +1,42 @@
+# When adding values, do not put them in quotes.
+# Once you are finished adding your values, rename this file to config.ini. Be sure to keep it in the config directory.
+
+[Default]
+base_file_path = /tmp/reports
+query_path = /usr/local/airflow/dags/queries
+database = <fill>
+project = <fill>
+
+[<fill>]
+host = <fill>
+port = 5432
+user = <fill>
+password = <fill>
+database = <fill>
+schema = <fill>
+rdbms = postgresql
+
+[Email]
+username = <fill>
+password = <fill>
+host = <fill>
+send_from = <fill>
+disabled = FALSE
+signature =
+
+[Logging]
+server = FALSE
+log_to_file = FALSE
+logfile =
+logging_db =
+
+[Debug]
+# Set to TRUE to disable all external emails.
+# When debug_mode is set to true,
+# emails will all be sent to the debug_email.
+debug_mode = TRUE
+debug_recipients = <fill>
+
+[Admin]
+# Set an admin user who will be blind copied on all outgoing emails
+admin_email = <fill>
